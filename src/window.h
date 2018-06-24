@@ -3,11 +3,19 @@
 
 #include "ui_window.h"
 
+/**
+ * @brief Main window of the program.
+ *
+ * Contains all the GUI elements to interact with the program and visualize the results.
+ */
 class Window : public QWidget
 {
     Q_OBJECT
 
 public:
+    /**
+     * @brief Default constructor. Sets up the UI given by the corresponding form.
+     */
     Window();
 
 private slots:
