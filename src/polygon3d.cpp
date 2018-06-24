@@ -62,6 +62,14 @@ void Polygon3D::rotate(double xDeg, double yDeg, double zDeg, const Point3D &piv
     rotate(Rotation3D(zDeg, Rotation3D::Z_AXIS), pivot);
 }
 
+void Polygon3D::scale(double ratio)
+{
+    for (auto& point : points)
+    {
+        point.scale(ratio);
+    }
+}
+
 bool Polygon3D::contains(const Point3D &point) const
 {
     return std::find(points.begin(), points.end(), point) != points.end();

@@ -3,6 +3,8 @@
 #include <math.h>
 #include <stdexcept>
 
+#include "homothecy.h"
+
 Point3D::Point3D(double x, double y, double z)
     : Matrix(3, 1)
 {
@@ -91,6 +93,21 @@ void Point3D::rotate(const Rotation3D &rot, const Point3D &pivot)
     {
         set(i, 0, rotated.get(i, 0));
     }
+}
+
+void Point3D::scale(double ratio)
+{
+    Homothecy homothety(ratio);
+    Matrix scaled = homothety * (*this);
+    for (int i = 0; i < 3; ++i)
+    {
+        set(i, 0, scaled.get(i, 0));
+    }
+}
+
+void Point3D::scale(double ratio, const Point3D &center)
+{
+    // TODO: Implement
 }
 
 Point3D Point3D::project(double a, double b, double c) const

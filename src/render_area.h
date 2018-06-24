@@ -33,6 +33,12 @@ public:
      */
     void rotateShape(double xDeg, double yDeg, double zDeg);
 
+    /**
+     * @brief Scale the shape by a given ratio from the origin.
+     * @param ratio Ratio to scale the shape from the origin.
+     */
+    void scaleShape(double ratio);
+
 protected:
     void paintEvent(QPaintEvent *ev);
 

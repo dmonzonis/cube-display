@@ -81,6 +81,11 @@ public:
     void rotate(double xDeg, double yDeg, double zDeg, const Point3D &pivot);
 
     /**
+     * @brief Scales all the points in the polygon by a given ratio.
+     */
+    void scale(double ratio);
+
+    /**
      * @brief Returns whether or not a given point is part of the polygon.
      * @param point Point to look up in the polygon.
      * @return A boolean that indicates whether the point is in the polygon or not.

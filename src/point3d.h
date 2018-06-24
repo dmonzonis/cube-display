@@ -74,6 +74,21 @@ public:
     void rotate(const Rotation3D &rot, const Point3D &pivot);
 
     /**
+     * @brief Scales the point by a given ratio from the origin.
+     * @param ratio Determines the scale amount, e.g, a ratio of 2 means the point will
+     * be twice as far from the center.
+     */
+    void scale(double ratio);
+
+    /**
+     * @brief Scales the point by a given ratio from the given center.
+     * @param ratio Determines the scale amount, e.g, a ratio of 2 means the point will
+     * be twice as far from the center.
+     * @param center Point from which to scale the point.
+     */
+    void scale(double ratio, const Point3D &center);
+
+    /**
      * @brief Project the point onto the plane ax+by+cz=0.
      *
      * @return The 3D coordinates of the projected point, which is contained in the plane.

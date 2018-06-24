@@ -30,11 +30,13 @@ HEADERS += src/matrix.h \
     src/render_area.h \
     src/rotation3d.h \
     src/window.h \
-    src/polygon3d.h
+    src/polygon3d.h \
+    src/homothecy.h
 SOURCES += src/main.cpp \
     src/matrix.cpp \
     src/point3d.cpp \
     src/render_area.cpp \
     src/rotation3d.cpp \
     src/window.cpp \
-    src/polygon3d.cpp
+    src/polygon3d.cpp \
+    src/homothecy.cpp

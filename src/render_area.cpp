@@ -34,6 +34,11 @@ void RenderArea::rotateShape(double xDeg, double yDeg, double zDeg)
     polygon.rotate(xDeg, yDeg, zDeg);
 }
 
+void RenderArea::scaleShape(double ratio)
+{
+    polygon.scale(ratio);
+}
+
 void RenderArea::paintEvent(QPaintEvent *ev)
 {
     QPainter painter(this);
