@@ -2,7 +2,6 @@
 #define POLYGON3D_H
 
 #include <array>
-#include <memory>
 #include <vector>
 
 #include <QPainter>

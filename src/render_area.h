@@ -5,8 +5,7 @@
 
 #include <QWidget>
 
-#include "polygon3d.h""
-#include "rotation3d.h"
+#include "polygon3d.h"
 
 class RenderArea : public QWidget
 {
