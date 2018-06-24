@@ -48,3 +48,9 @@ void Window::on_btnScale_clicked()
     ui.renderArea->scaleShape(ratio);
     ui.renderArea->update();
 }
+
+void Window::on_btnReset_clicked()
+{
+    ui.renderArea->resetShape();
+    ui.renderArea->update();
+}

@@ -14,6 +14,9 @@
 class RenderArea : public QWidget
 {
 public:
+    enum Shape {CUBE};
+
+public:
     /**
      * @brief Constructor.
      * @param parent Parent widget.
@@ -39,11 +42,23 @@ public:
      */
     void scaleShape(double ratio);
 
+    /**
+     * @brief Resets all transformations on the currently selected shape.
+     */
+    void resetShape();
+
+    /**
+     * @brief Sets a new type of shape and resets all transformations.
+     * @param shape The type of shape that will be used.
+     */
+    void setShape(Shape newShape);
+
 protected:
     void paintEvent(QPaintEvent *ev);
+    Shape selectedShape;
 
 private:
-    Polygon3D polygon;
+    Polygon3D *shape;
 };
 
 #endif // RENDER_AREA_H

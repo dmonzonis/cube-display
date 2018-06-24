@@ -31,7 +31,8 @@ HEADERS += src/matrix.h \
     src/rotation3d.h \
     src/window.h \
     src/polygon3d.h \
-    src/homothecy.h
+    src/homothecy.h \
+    src/shapes.h
 SOURCES += src/main.cpp \
     src/matrix.cpp \
     src/point3d.cpp \
@@ -39,4 +40,5 @@ SOURCES += src/main.cpp \
     src/rotation3d.cpp \
     src/window.cpp \
     src/polygon3d.cpp \
-    src/homothecy.cpp
+    src/homothecy.cpp \
+    src/shapes.cpp

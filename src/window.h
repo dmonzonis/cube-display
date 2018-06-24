@@ -22,6 +22,7 @@ private slots:
     // Using auto-connect naming conventions for uic
     void on_btnRotate_clicked();
     void on_btnScale_clicked();
+    void on_btnReset_clicked();
 
 private:
     void showErrorMessage(char *msg) const;
