@@ -49,5 +49,8 @@ void RenderArea::setShape(Shape newShape)
     case CUBE:
         shape = new Cube();
         break;
+    case PYRAMID:
+        shape = new Pyramid();
+        break;
     }
 }

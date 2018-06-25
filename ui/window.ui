@@ -118,6 +118,9 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="text">
+        <string>1</string>
+       </property>
       </widget>
      </item>
      <item>

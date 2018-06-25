@@ -14,7 +14,7 @@
 class RenderArea : public QWidget
 {
 public:
-    enum Shape {CUBE};
+    enum Shape {CUBE, PYRAMID};
 
 public:
     /**

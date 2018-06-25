@@ -9,4 +9,10 @@ public:
     Cube();
 };
 
+class Pyramid : public Polygon3D
+{
+public:
+    Pyramid();
+};
+
 #endif // SHAPES_H
