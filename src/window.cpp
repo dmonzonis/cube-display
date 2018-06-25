@@ -2,10 +2,16 @@
 
 #include <QMessageBox>
 
+#include "render_area.h"
+
 Window::Window()
     : QWidget(nullptr)
 {
     ui.setupUi(this);
+    // Add shapes to combo box
+    ui.cbShape->addItem("Cube", RenderArea::CUBE);
+    ui.cbShape->addItem("Pyramid", RenderArea::PYRAMID);
+    ui.cbShape->addItem("Octahedron", RenderArea::OCTAHEDRON);
 }
 
 void Window::showErrorMessage(char *msg) const
@@ -52,5 +58,13 @@ void Window::on_btnScale_clicked()
 void Window::on_btnReset_clicked()
 {
     ui.renderArea->resetShape();
+    ui.renderArea->update();
+}
+
+void Window::on_cbShape_currentIndexChanged(int index)
+{
+    // Get selected shape
+    RenderArea::Shape selectedShape = static_cast<RenderArea::Shape>(index);
+    ui.renderArea->setShape(selectedShape);
     ui.renderArea->update();
 }

@@ -23,6 +23,7 @@ private slots:
     void on_btnRotate_clicked();
     void on_btnScale_clicked();
     void on_btnReset_clicked();
+    void on_cbShape_currentIndexChanged(int index);
 
 private:
     void showErrorMessage(char *msg) const;

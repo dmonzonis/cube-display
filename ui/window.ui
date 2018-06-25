@@ -84,7 +84,17 @@
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="scaleControls">
+    <layout class="QHBoxLayout" name="otherControls">
+     <item>
+      <widget class="QComboBox" name="cbShape">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
      <item alignment="Qt::AlignRight">
       <widget class="QLabel" name="labelScale">
        <property name="sizePolicy">
