@@ -15,4 +15,10 @@ public:
     Pyramid();
 };
 
+class Octahedron : public Polygon3D
+{
+public:
+    Octahedron();
+};
+
 #endif // SHAPES_H

@@ -52,5 +52,8 @@ void RenderArea::setShape(Shape newShape)
     case PYRAMID:
         shape = new Pyramid();
         break;
+    case OCTAHEDRON:
+        shape = new Octahedron();
+        break;
     }
 }
