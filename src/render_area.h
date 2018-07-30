@@ -53,12 +53,22 @@ public:
      */
     void setShape(Shape newShape);
 
+    /**
+     * @brief Sets the pivot point with respect to which the rotations and homothecys will
+     * be computed.
+     * @param xPos x coordinate of the pivot point.
+     * @param yPos y coordinate of the pivot point.
+     * @param zPos z coordinate of the pivot point.
+     */
+    void setPivot(double xPos, double yPos, double zPos);
+
 protected:
     void paintEvent(QPaintEvent *ev);
     Shape selectedShape;
 
 private:
     Polygon3D *shape;
+    Point3D pivot;
 };
 
 #endif // RENDER_AREA_H

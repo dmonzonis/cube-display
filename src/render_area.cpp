@@ -5,7 +5,8 @@
 #include "shapes.h"
 
 RenderArea::RenderArea(QWidget *parent)
-    : QWidget(parent)
+    : QWidget(parent),
+      pivot(Point3D(0, 0, 0))
 {
     shape = new Cube();
     selectedShape = CUBE;
@@ -18,11 +19,12 @@ RenderArea::~RenderArea()
 
 void RenderArea::rotateShape(double xDeg, double yDeg, double zDeg)
 {
-    shape->rotate(xDeg, yDeg, zDeg);
+    shape->rotate(xDeg, yDeg, zDeg, pivot);
 }
 
 void RenderArea::scaleShape(double ratio)
 {
+    // TODO: Use pivot as center when the homothecy constructor is defined
     shape->scale(ratio);
 }
 
@@ -56,4 +58,9 @@ void RenderArea::setShape(Shape newShape)
         shape = new Octahedron();
         break;
     }
+}
+
+void RenderArea::setPivot(double xPos, double yPos, double zPos)
+{
+    pivot = Point3D(xPos, yPos, zPos);
 }

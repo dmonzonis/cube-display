@@ -40,7 +40,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="txtX">
+      <widget class="QLineEdit" name="txtRotX">
        <property name="text">
         <string>0</string>
        </property>
@@ -54,7 +54,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="txtY">
+      <widget class="QLineEdit" name="txtRotY">
        <property name="text">
         <string>0</string>
        </property>
@@ -68,7 +68,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="txtZ">
+      <widget class="QLineEdit" name="txtRotZ">
        <property name="text">
         <string>0</string>
        </property>
@@ -160,6 +160,47 @@
       <widget class="QPushButton" name="btnReset">
        <property name="text">
         <string>Reset</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="labelX_2">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtPivotX"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelY_2">
+       <property name="text">
+        <string>y</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtPivotY"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelZ_2">
+       <property name="text">
+        <string>z</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtPivotZ"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnPivot">
+       <property name="text">
+        <string>Set Pivot</string>
        </property>
       </widget>
      </item>
